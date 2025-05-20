@@ -1,0 +1,22 @@
+#add-btn:hover, #add-list-btn:hover {
+    background: var(--color-brand-hover);
+}
+
+.default-input:hover {
+    border-color: var(--border-hover) !important;
+}
+
+.default-input:focus {
+    outline: none;
+    border: 2px solid var(--color-brand) !important;
+}
+
+.item-check:hover {
+    border: 2px solid var(--border-hover);
+}
+
+.item-check:checked {
+    background-image: url(/public/image/checked.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-listname-and-btn {
+    display: flex;
+    column-gap: 1rem;
+}
+
+#title h1 {
+    margin-bottom: 2.5rem;
+}
+
+#add-list-btn {
+    background: var(--color-brand);
+    color: var(--always-white);
+    font: var(--text-label);
+    border-radius: 12px;
+    padding-block: .75rem;
+    width: 10rem;
+    border: none;
+    cursor: pointer;
+}

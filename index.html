@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <header>
+        <img src="/public/image/logo.svg" alt="">
+    </header>
+
+    <main>
+        <div id="main-container">
+
+            <div id="back-and-title">
+                <a href="./pages/home.html"><img src="/public/image/link button.svg" alt="Voltar"></a>
+
+
+                <h2 id="quicklist-name"></h2>
+            </div>
+
+            <div class="input-and-add-item">
+                <input id="input-item" class="default-input" placeholder="Adicione um novo item">
+                <button id="add-btn">Adicionar item</button>
+            </div>
+
+            <div class="list">
+            </div>
+
+            <div class="remove-message">
+                <div class="icon-and-message">
+                    <img src="/public/image/warning-circle-filled.svg" alt="">
+                    <span>O item foi removido da lista</span>
+                </div>
+
+                <div class="remove-message-btn">
+                    <button id="remove-notification-btn"><img src="./public/image/Icon.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
