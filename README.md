@@ -12,6 +12,9 @@
 - Rocketseat
 - Eduardo Dias Bianchini
 
+### 📷 Preview
+https://eduud1as.github.io/lista-compras-quicklist/
+
 ### 📝 Licença
 
 Este projeto está licenciado sob a Licença MIT.  
