@@ -8,12 +8,6 @@
 - CSS
 - HTML
 
-### 📷 Preview
-Abaixo, imagem das duas telas da aplicação:
-<img src="./public/preview/index.jpeg" alt="Preview da aplicação" width="600"/>
-
-<img src="./public/preview/index.jpeg" alt="Preview da aplicação" width="600"/>
-
 ### 👨‍💻 Autor
 - Rocketseat
 - Eduardo Dias Bianchini
