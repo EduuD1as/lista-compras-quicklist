@@ -63,7 +63,7 @@ input::placeholder {
 }
 
 .list {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 2.5rem 0 2.25rem 0;
     row-gap: .75rem;
@@ -72,6 +72,7 @@ input::placeholder {
 .check-and-name {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: .75rem;
 }
 
@@ -111,7 +112,7 @@ input::placeholder {
     }
 }
 
-#remove-task-button {
+.remove-item-btn {
     display: flex;
     align-items: center;
     justify-content: center;

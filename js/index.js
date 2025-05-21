@@ -29,6 +29,7 @@ addListBtn.addEventListener('click', () => {
         // Remove o alerta ao receber o evento de click no botão de remoção
         removeAlert.addEventListener('click', () => {
             alertMessage.style.display = 'none'
+            inputItem.classList.remove('input-alert-border')
         })
     }
 })

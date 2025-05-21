@@ -24,3 +24,7 @@
 .input-alert-border {
     border: 2px solid var(--color-danger) !important;
 }
+
+.item:hover {
+    outline: 1px solid var(--border-hover);
+}

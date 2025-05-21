@@ -6,10 +6,12 @@ const itemContainer = document.querySelector('.list')
 const trashIcon = document.getElementById('trash-icon')
 const removeNotificationBtn = document.getElementById('remove-notification-btn')
 const listTitle = document.getElementById('list-title')
+const alertMessage = document.querySelector('.alert')
+const removeAlert = document.getElementById('remove-notification-btn')
 
 // Armazena a variável que conterá o valor digitado no input do index.html (correspondente ao nome da tarefa)
 const listNameFromHome = localStorage.getItem("listName")
-listTitle.textContent = listNameFromHome + " | Quicklist"
+listTitle.textContent = listNameFromHome + " | quicklist"
 const listName = document.getElementById('quicklist-name')
 
 // Atribui o nome da lista informada pelo usuário no input do home.html
@@ -22,6 +24,8 @@ addBtn.addEventListener('click', () => {
 
     // Caso seja digitado algo diferente de "", o bloco de código é executado para criação de um item na lista
     if (itemValue !== "") {
+        itemContainer.style.display = 'flex'
+
         // Div principal para os itens da lista
         const divItems = document.createElement('div')
         divItems.className = 'item'
@@ -34,6 +38,16 @@ addBtn.addEventListener('click', () => {
         const inputCheckbox = document.createElement('input')
         inputCheckbox.type = 'checkbox'
         inputCheckbox.className = 'item-check'
+
+        // Altera a cor do background quando o input for marcado
+        inputCheckbox.addEventListener('change', () => {
+            if (inputCheckbox.checked) {
+                divItems.style.backgroundColor = 'var(--background-done)'
+            }
+            else {
+                divItems.style.backgroundColor = ''
+            }
+        })
 
         // Criando o span e usando textContent para informar o nome do item digitado
         const itemName = document.createElement('span')
@@ -85,6 +99,23 @@ addBtn.addEventListener('click', () => {
             removeNotificationBtn.addEventListener('click', () => {
                 removeMessageDiv.style.display = 'none'
             })
+        })
+    }
+    else {
+        alertMessage.style.display = 'flex'
+
+        inputItem.classList.add('input-alert-border')
+
+        // Adiciona um Timeout de 3000ms, fazendo o alerta desaparecer após esse intervalo
+        setTimeout(() => {
+            alertMessage.style.display = 'none'
+            inputItem.classList.remove('input-alert-border')
+        }, 3000)
+
+        // Remove o alerta ao receber o evento de click no botão de remoção
+        removeAlert.addEventListener('click', () => {
+            alertMessage.style.display = 'none'
+            inputItem.classList.remove('input-alert-border')
         })
     }
 })
