@@ -57,7 +57,7 @@ addBtn.addEventListener('click', () => {
         CheckAndTaskname.appendChild(inputCheckbox)
         CheckAndTaskname.appendChild(itemName)
 
-        // Adicionando a div 'check-and-taskname' dentro da div 'task'
+        // Adicionando a div 'check-and-taskname' dentro da div 'item'
         divItems.appendChild(CheckAndTaskname)
 
         // Criando a div que envolve o botão de exclusão do item
