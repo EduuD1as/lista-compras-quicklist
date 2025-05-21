@@ -89,16 +89,11 @@ addBtn.addEventListener('click', () => {
         trashIcon.addEventListener('click', () => {
             itemContainer.removeChild(divItems)
             removeMessageDiv.style.display = 'flex'
-            
+
             // Quanto o botão de exclusão recebe o evento de click, o display é setado como 'none'
             removeNotificationBtn.addEventListener('click', () => {
                 removeMessageDiv.style.display = 'none'
-                console.log('Botão clicado.')
             })
-
-           
-
-
         })
     }
     else {
