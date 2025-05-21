@@ -76,7 +76,7 @@ addBtn.addEventListener('click', () => {
         // Adicionando o removeBtn dentro da div 'remove-item-btn'
         removeTaskBtnDiv.appendChild(trashIcon);
 
-        // Adicionando a div 'remove-item-btn' dentro da div 'items'
+        // Adicionando a div 'remove-item-btn' dentro da div 'item'
         divItems.appendChild(removeTaskBtnDiv);
 
         // Limpa o conteudo do input após toda a execução de código acima
