@@ -12,7 +12,7 @@
 - Rocketseat
 - Eduardo Dias Bianchini
 
-- ### 📷 Preview
+### 📷 Preview
 https://eduud1as.github.io/lista-compras-quicklist/
 
 ### 📝 Licença
