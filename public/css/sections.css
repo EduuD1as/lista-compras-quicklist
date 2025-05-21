@@ -131,13 +131,23 @@ input::placeholder {
     border-radius: 12px;
     padding-inline: .75rem;
     padding-block: .75rem;
-    transition: all 0.3s;
+}
 
-    button {
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+.alert {
+    margin-top: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-danger);
+    border-radius: 12px;
+    padding-inline: .75rem;
+    padding-block: .75rem;
+}
+
+#remove-notification-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .icon-and-message {

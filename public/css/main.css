@@ -15,7 +15,7 @@
     --border-primary: #D1D5DB;
     --border-hover: #B9C2D0;
 
-    /* Estilos de fontes */    
+    /* Estilos de fontes */
     --text-title: bold 24px/32px 'Inter', sans-serif;
     --text-label: 600 16px/20px 'Inter', sans-serif;
     --text-paragraph: 500 16px/20px 'Inter', sans-serif;
@@ -25,8 +25,31 @@
     font-family: 'Inter', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: var(--background-primary);
     margin-top: 1.25rem;
     padding: 0;
+}
+
+/* Responsividade para mobile*/
+@media (max-width: 768px) {
+    #main-container {
+        max-width: 85vw;
+    }
+
+    .input-and-add-item {
+        flex-direction: column;
+        width: 85vw;
+        row-gap: 1rem;
+
+        input,
+        #add-btn {
+            width: 100%;
+            padding-block: .75rem;
+        }
+    }
 }

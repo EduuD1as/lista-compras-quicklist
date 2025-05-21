@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./public/icon/quicklist-" type="svg-icon">
-    <title>Página Inicial | Quicklist</title>
+    <link rel="icon" href="../public/icon/quicklist-icon.svg" type="svg-icon">
+    <title id="list-title"></title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,29 +13,36 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="../public/css/index.css">
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="./public/image/logo.svg" alt=""></a>
+        <a href="../index.html"><img src="../public/image/logo.svg" alt=""></a>
     </header>
 
-    <div class="container">
-        <div class="sub-container">
-            <div id="title">
-                <h1>Crie um nome para sua lista de compras:</h1>
+    <main>
+        <div id="main-container">
+
+            <div id="back-and-title">
+                <a href="../index.html"><img src="../public/image/link button.svg" alt="Voltar"></a>
+
+
+                <h2 id="quicklist-name"></h2>
             </div>
 
-            <div class="input-listname-and-btn">
-                <input type="text" class="default-input" id="input-listname" placeholder="Digite o nome da sua lista">
-                <button id="add-list-btn">Adicionar Lista</button>
+            <div class="input-and-add-item">
+                <input id="input-item" class="default-input" placeholder="Adicione um novo item">
+                <button id="add-btn">Adicionar item</button>
             </div>
 
-            <div class="alert">
+            <div class="list">
+            </div>
+
+            <div class="remove-message">
                 <div class="icon-and-message">
                     <img src="../public/image/warning-circle-filled.svg" alt="">
-                    <span>Por favor, insira um nome válido para sua lista</span>
+                    <span>O item foi removido da lista</span>
                 </div>
 
                 <div class="remove-message-btn">
@@ -44,13 +51,10 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+    </main>
+
 </body>
-
-<script>
-    
-</script>
-
-<script src="./js/index.js"></script>
+<script src="../js/list.js"></script>
 
 </html>
