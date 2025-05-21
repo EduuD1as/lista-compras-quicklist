@@ -3,11 +3,11 @@ const inputItem = document.getElementById('input-item')
 const addBtn = document.getElementById('add-btn')
 const removeMessageDiv = document.querySelector('.remove-message')
 const itemContainer = document.querySelector('.list')
-const trashIcon = document.getElementById('trash-icon')
+const trashIcon = document.querySelector('.trash-icon')
 const removeNotificationBtn = document.getElementById('remove-notification-btn')
 const listTitle = document.getElementById('list-title')
 const alertMessage = document.querySelector('.alert')
-const removeAlert = document.getElementById('remove-notification-btn')
+const removeAlert = document.getElementById('remove-alert-btn')
 
 // Armazena a variável que conterá o valor digitado no input do index.html (correspondente ao nome da tarefa)
 const listNameFromHome = localStorage.getItem("listName")
@@ -89,16 +89,16 @@ addBtn.addEventListener('click', () => {
         trashIcon.addEventListener('click', () => {
             itemContainer.removeChild(divItems)
             removeMessageDiv.style.display = 'flex'
-
-            // Adiciona um intervalo de tempo (2000ms) no qual a notificação fica em tela
-            setTimeout(() => {
-                removeMessageDiv.style.display = 'none'
-            }, 2000)
-
+            
             // Quanto o botão de exclusão recebe o evento de click, o display é setado como 'none'
             removeNotificationBtn.addEventListener('click', () => {
                 removeMessageDiv.style.display = 'none'
+                console.log('Botão clicado.')
             })
+
+           
+
+
         })
     }
     else {
