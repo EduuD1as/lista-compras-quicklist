@@ -16,7 +16,7 @@
 }
 
 .item-check:checked {
-    background-image: url(/public/image/checked.svg) !important;
+    background-image: url(../image/checked.svg) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
