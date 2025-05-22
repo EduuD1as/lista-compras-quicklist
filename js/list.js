@@ -4,7 +4,7 @@ const addBtn = document.getElementById('add-btn')
 const removeMessageDiv = document.querySelector('.remove-message')
 const itemContainer = document.querySelector('.list')
 const trashIcon = document.getElementById('trash-icon')
-const removeNotificationBtn = document.getElementById('remove-notification-btn')
+const removeNotificationBtn = document.querySelector('.remove-message-btn')
 const listTitle = document.getElementById('list-title')
 const alertMessage = document.querySelector('.alert')
 const removeAlert = document.getElementById('remove-notification-btn')
@@ -85,20 +85,19 @@ addBtn.addEventListener('click', () => {
         // Adicionando a div 'task' dentro da div 'item', que envolve toda a lista
         itemContainer.appendChild(divItems);
 
-        // Arrow Function para aplicar o display 'flex' na div que representa a notificação de exclusão de item
         trashIcon.addEventListener('click', () => {
             itemContainer.removeChild(divItems)
             removeMessageDiv.style.display = 'flex'
-
-            // Adiciona um intervalo de tempo (2000ms) no qual a notificação fica em tela
-            setTimeout(() => {
-                removeMessageDiv.style.display = 'none'
-            }, 2000)
 
             // Quanto o botão de exclusão recebe o evento de click, o display é setado como 'none'
             removeNotificationBtn.addEventListener('click', () => {
                 removeMessageDiv.style.display = 'none'
             })
+
+            // Adiciona um intervalo de tempo (2000ms) no qual a notificação fica em tela
+            setTimeout(() => {
+                removeMessageDiv.style.display = 'none'
+            }, 2000)
         })
     }
     else {
@@ -116,6 +115,6 @@ addBtn.addEventListener('click', () => {
         removeAlert.addEventListener('click', () => {
             alertMessage.style.display = 'none'
             inputItem.classList.remove('input-alert-border')
-        })
+        })  
     }
 })
