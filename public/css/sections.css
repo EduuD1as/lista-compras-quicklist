@@ -65,7 +65,7 @@ input::placeholder {
 .list {
     display: none;
     flex-direction: column;
-    margin: 2.5rem 0 2.25rem 0;
+    margin: 2.5rem 0 1rem 0;
     row-gap: .75rem;
 }
 
@@ -145,7 +145,7 @@ input::placeholder {
     padding-block: .75rem;
 }
 
-#remove-notification-btn {
+#remove-notification-btn, #remove-alert-btn {
     border: none;
     background: none;
     cursor: pointer;

@@ -3,11 +3,16 @@ const inputItem = document.getElementById('input-item')
 const addBtn = document.getElementById('add-btn')
 const removeMessageDiv = document.querySelector('.remove-message')
 const itemContainer = document.querySelector('.list')
+<<<<<<< HEAD
 const trashIcon = document.getElementById('trash-icon')
 const removeNotificationBtn = document.querySelector('.remove-message-btn')
+=======
+const trashIcon = document.querySelector('.trash-icon')
+const removeNotificationBtn = document.getElementById('remove-notification-btn')
+>>>>>>> 41f1369b999273187c2fe0d049f32d450d9e0e9a
 const listTitle = document.getElementById('list-title')
 const alertMessage = document.querySelector('.alert')
-const removeAlert = document.getElementById('remove-notification-btn')
+const removeAlert = document.getElementById('remove-alert-btn')
 
 // Armazena a variável que conterá o valor digitado no input do index.html (correspondente ao nome da tarefa)
 const listNameFromHome = localStorage.getItem("listName")
