@@ -54,12 +54,20 @@ main {
     width: 28rem;
     padding-block: .75rem;
     border-radius: 12px;
-    background: var(--background-secondary);
+    background: var(--background-secondary);    
     padding-left: 1rem;
 }
 
 input::placeholder {
     font-family: 'Inter';
+}
+
+#maxlength {
+    display: none;
+    padding-left: .2rem;
+    margin-top: .2rem;
+    font-size: 10px;
+    color: var(--content-secondary);
 }
 
 .list {

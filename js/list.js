@@ -8,6 +8,7 @@ const removeNotificationBtn = document.getElementById('remove-notification-btn')
 const listTitle = document.getElementById('list-title')
 const alertMessage = document.querySelector('.alert')
 const removeAlert = document.getElementById('remove-alert-btn')
+const maxLengthMessage = document.getElementById('maxlength')
 
 // Armazena a variável que conterá o valor digitado no input do index.html (correspondente ao nome da tarefa)
 const listNameFromHome = localStorage.getItem("listName")
@@ -16,6 +17,18 @@ const listName = document.getElementById('quicklist-name')
 
 // Atribui o nome da lista informada pelo usuário no input do home.html
 listName.textContent = listNameFromHome
+
+// Mostra a mensagem de limitação de caractéres ao clicar no input.
+inputItem.addEventListener('click', () => {
+    maxLengthMessage.style.display = 'flex'
+})
+
+// Remove a mensagem de limitação ao clicar em qualquer outro elemento fora do input.
+document.addEventListener('click', (event) => {
+  if (!inputItem.contains(event.target)) {
+    maxLengthMessage.style.display = 'none';
+  }
+});
 
 // Arrow function para executar o bloco de código diretamente ao receber o evento de click no botão
 addBtn.addEventListener('click', () => {
