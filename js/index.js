@@ -3,6 +3,19 @@ const addListBtn = document.getElementById('add-list-btn')
 const listnameInput = document.getElementById('input-listname')
 const alertMessage = document.querySelector('.alert')
 const removeAlert = document.getElementById('remove-notification-btn')
+const maxLengthMessage = document.getElementById('maxlength')
+
+// Mostra a mensagem de limitação de caractéres ao clicar no input.
+listnameInput.addEventListener('click', () => {
+    maxLengthMessage.style.display = 'flex'
+})
+
+// Remove a mensagem de limitação ao clicar em qualquer outro elemento fora do input.
+document.addEventListener('click', (event) => {
+  if (!listnameInput.contains(event.target)) {
+    maxLengthMessage.style.display = 'none';
+  }
+});
 
 // Arrow Function para iniciar um bloco de código ao receber o evento de click no botão de Adicionar Item
 addListBtn.addEventListener('click', () => {
