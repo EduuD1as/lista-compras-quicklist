@@ -10,7 +10,7 @@
 
 ### 👨‍💻 Autor
 - Rocketseat
-- Eduardo Dias Bianchini
+- Eduardo Dias Bianchini (modificações e incrementos)
 
 ### 📷 Preview
 https://eduud1as.github.io/lista-compras-quicklist/
