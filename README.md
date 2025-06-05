@@ -22,4 +22,4 @@ Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-<img src='https://app.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Frocketseat-logo.svg&w=256&q=75'>
+<img src='https://www.rocketseat.com.br/_next/static/media/rocketseat-logo.a329c198.svg&w=256&q=75'>
